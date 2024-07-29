@@ -5,7 +5,6 @@ Hello , this repository contains the web pages and mern stacks routes for the po
 Keep in mind a few steps before starting the project 
 1. Please install the node js before starting the system .
 2. run this command in your terminal npm init-y and make sure to **change the value of main to app.js from index.js .
-**
 3.Install these packages by opening the terminal in vscode:
 4.run these commands in the terminal of Vscode
 5.npm init -y (make sure to change the value of main should be app.js , if its not just change index.js to app.js )\n
