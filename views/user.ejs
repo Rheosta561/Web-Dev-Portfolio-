@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/expeestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul class="navlist">
+                <li class="litem"><a href="/">Home</a></li>
+                <li class="litem"><a href="/comingsoon">Pricing</a></li>
+                <li class="litem"><a href="/comingsoon">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mainbox">
+        <div class="initcontent">
+            <div class="panel">
+                <div class="panelitem"><a href="/expeemusic/originals/<%=user.name%>">Beats</a></div>
+                <div class="panelitem"><a href="/expeemusic/originals/<%=user.name%>">Originals</a></div>
+                <div class="panelitem"><a href="https://open.spotify.com/artist/2cttR3oMJIvMKAy9qqb0rS?si=PSO6KhCTRjSQrZPWT6E6qg">Spotify</a></div>
+                <div class="panelitem"><a href="/comingsoon">Films</a></div>
+                <div class="panelitem"><a href="/comingsoon">Donate</a></div>
+            </div>
+            <div class="heading">
+                <div class="htitle">expee</div>
+                <div class="hdes">MUSIC</div>
+                <div class="hsub">"Tera Bhai <%= user.name%>"</div>
+                <div class="hstreams">
+                    <div class="lnum">100,000</div>
+                    <div class="ldet"></div>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typed = new Typed('.ldet', {
+                            strings: ["Listening Now", "Enjoying Now", "Vibing Now"],
+                            typeSpeed: 125,
+                            backSpeed: 125,
+                            loop: true
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="rightbar">
+                <div class="login">
+                    <img src="<%= user.image %>" alt="Image" class="favicons">
+                    <!-- <div class="log"><a href="/login">Login</a></div> -->
+                </div>
+                <div class="buttonrow">
+                    <div class="pgbutton">
+                        <a href="https://www.instagram.com/expeemusic?igsh=MW9oMjVhemFubjUxYg=="><button href="https://www.instagram.com/expeemusic?igsh=MW9oMjVhemFubjUxYg==" class="btdetail"><img src="/images/instagram.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/socials"><button href="/socials" class="btdetail"><img src="/images/github.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/socials"><button href="/socials" class="btdetail"><img src="/images/twitter-alt.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/socials"><button href="/socials" class="btdetail"><img src="/images/twitter-alt.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="cimage"><img src="https://source.boomplaymusic.com/group10/M00/06/24/e18f440b809f4fe2af600dc779e2e8a4_320_320.jpg" alt="" class="img1">
+                </div>
+                <div class="cardtitle">Spotify</div>
+                <div class="carddes">Listeners 150</div>
+
+            </div>
+            <div class="card">
+                <div class="cimage"><img src="https://variety.com/wp-content/uploads/2024/06/Mirzapur-3-poster.jpg?w=1000" alt="" class="img1">
+                </div>
+                <div class="cardtitle">Prime Music</div>
+                <div class="carddes">Listeners 175</div>
+
+            </div>
+            <div class="card">
+                <div class="cimage"><img src="/images/Home.webp" alt="" class="img1">
+                </div>
+                <div class="cardtitle">Itunes</div>
+                <div class="carddes">Listeners 200</div>
+
+            </div>
+            <div class="card">
+                <div class="cimage"><img src="https://source.boomplaymusic.com/group10/M00/06/16/97d5979da95442fabceb0550408701f9_320_320.jpg" alt="" class="img1">
+                </div>
+                <div class="cardtitle">Pandora</div>
+                <div class="carddes">Listeners 123</div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/expeestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="/javascripts/pwcheck.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul class="navlist">
+                <li class="litem"><a href="/">Home</a></li>
+                <li class="litem"><a href="/comingsoon">Pricing</a></li>
+                <li class="litem"><a href="/comingsoon">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mainbox">
+        <div class="initcontent">
+            <div class="panel">
+                <div class="panelitem"><a href="/login">Beats</a></div>
+                <div class="panelitem"><a href="/login">Originals</a></div>
+                <div class="panelitem"><a href="https://open.spotify.com/artist/2cttR3oMJIvMKAy9qqb0rS?si=PSO6KhCTRjSQrZPWT6E6qg">Spotify</a></div>
+                <div class="panelitem"><a href="/comingsoon">Films</a></div>
+                <div class="panelitem"><a href="/comingsoon">Donate</a></div>
+            </div>
+            <div class="heading">
+                <div class="htitle">expee</div>
+                <div class="hdes">MUSIC</div>
+                <div class="hstreams">
+                    <div class="lnum">100,000</div>
+                    <div class="ldet"></div>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typed = new Typed('.ldet', {
+                            strings: ["Listening Now", "Enjoying Now", "Vibing Now"],
+                            typeSpeed: 125,
+                            backSpeed: 125,
+                            loop: true
+                        });
+                    </script>
+                </div>
+                <div class="newlogin">
+                    <form action="/expeemusic/login" method="post" class="logform">
+                        <div class="formtitle">
+                            <div class="formdes">
+                                <div class="fname">Name</div>
+                                <div class="fdet"><input type="text" placeholder="name" name="name" class="fbut" required></div>
+                            </div>
+                            <div class="formdes">
+                                <div class="fname">Username</div>
+                                <div class="fdet"><input type="text" placeholder="Username" name="username" class="fbut" required></div>
+                            </div>
+                            <div class="formdes">
+                                <div class="fname">Profile Pic</div>
+                                <div class="fdet"><input type="text" placeholder="image url" name="image" class="fbut"></div>
+                            </div>
+                            <div class="formdes">
+                                <div class="fname">Password</div>
+                                <div class="fdet"><input type="password" placeholder="Password" name="password" class="fbut" id="password" required onkeyup="check();"></div>
+                            </div>
+                            <div class="formdes">
+                                <div class="fname">Confirm</div>
+                                <div class="fdet"><input type="password" placeholder="Confirm" name="confirm_password" class="fbut" id="confirm_password" required onkeyup="check();"><span id='message'></span></div>
+                            </div>
+                            <div class="formdes">
+                                <div class="fname">Click on Login If page doesn't loads</div>
+                            </div>
+                            <div >
+                                <a href="/profilelogin"><input type="submit" value="Create Account" class="formbutton"></a>
+                            </div>
+                            <div class="prevuser">
+                                <div class="ques">
+                                    Already a user ?
+                                </div>
+                                <div class="ans">
+                                    <a href="/profilelogin">Log in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="rightbar">
+                <br>
+              
+                <div class="buttonrow">
+                    <div class="pgbutton">
+                        <a href="/"><button href="/" class="btdetail"><img src="/images/instagram.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/"><button href="/" class="btdetail"><img src="/images/instagram.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/"><button href="/" class="btdetail"><img src="/images/instagram.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                    <div class="pgbutton">
+                        <a href="/"><button href="/" class="btdetail"><img src="/images/instagram.png" alt=""
+                                    class="favicons"></button></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+      
+    </div>
+    <div class="footpanel">
+        <footer>
+            &#169; Copyright | ExPee Music | all rights reserved 
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

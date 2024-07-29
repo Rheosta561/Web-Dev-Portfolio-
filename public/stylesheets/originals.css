@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    color: white;
+
+}
+.litem a{
+    text-decoration: none;
+    color: azure;
+}
+.navlist{
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #00000083;
+
+}
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.greeting{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    font-size: 5rem;
+    align-items: center;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 3px 10px #000000;
+  animation: display 7s  1 linear ;
+  opacity: 1;
+  margin-top: 1rem;
+
+}
+@keyframes display {
+   0% {opacity: 0;}
+   100%{opacity: 1;}
+    
+}
+.contentbox{
+    background-color: #8c8c8c4a;
+    height: 38.5rem;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    justify-content: space-between;
+    /* gap: 0.2rem; */
+    overflow: hidden;
+
+}
+.contentitem{
+    width: 33%;
+    height: 18rem;
+    padding: 0.55rem;
+    transition: all 50ms linear;
+
+
+}
+.contentitem:hover{
+    transform: scale(1.1);
+}
+.contentbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Admin{
+    width: 40%;
+    height: 86.5%;
+    /* border:1px solid black;
+    transform: scale(1.16); */
+    position: relative;
+    margin-right: 20rem;
+    margin-top: 0.2rem;
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+    
+}
+.contentintro{
+    display: flex;
+    gap: 0rem;
+
+}
+.admindetail{
+    height: 23%;
+    display: flex;
+    overflow: hidden;
+    width:35%;
+    margin-right: 3.5rem;
+    position: absolute;
+    margin-left: 20.5rem;
+    padding-top: 1rem;
+    text-align: justify;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    align-items: start;
+    background-color: #b9b6b669;
+    margin-top: 4.5rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.601);
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 1s linear;
+}
+#Admin:hover{
+    transform: scale(1.5);
+
+
+}
+.admindetail:hover{
+    background-color: #0000006f;
+
+}
+.socials img{
+    height: 80%;
+    width: 96%;
+    margin:0.2rem;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.socials{
+    background-color: #d8cfcf69;
+    width: 33%;
+    border-radius: 10px;
+    padding:0.2rem;
+    overflow: hidden;
+}
+.socialicon{
+
+    display: flex;
+    height: 14%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    gap: 1rem;
+
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: row-reverse;
+}
+.socialdesc a{
+    text-decoration: none;
+    color: rgb(45, 45, 47);
+
+}
+.socialbar{
+    display: flex;
+    gap:0.2rem;
+    justify-content: center;
+}
+.socials img:hover{
+    transform: scale(1.1);
+}

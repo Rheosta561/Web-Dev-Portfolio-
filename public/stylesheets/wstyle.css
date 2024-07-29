@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+.licontent {
+    display: flex;
+    color: azure;
+    justify-content: space-between;
+    background-color: rgb(52, 47, 47);
+}
+
+.litems {
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainbox {
+    background-image: url('/images/Home.webp');
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    display: flex;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    height: 1.4rem;
+    width: 1.5rem;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-top: 1rem;
+}
+
+.fi fi-rr-angle-circle-right {
+    height: 100%;
+    width: 100%;
+}
+
+.panel {
+    width: 28%;
+    height: 28%;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    background-color: rgb(16, 7, 39);
+    box-shadow: 5px 5px 50px rgb(15, 14, 14);
+    transition: width 1s linear;
+}
+
+.panelitem {
+    height: 3rem;
+    width: 95%;
+    margin: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.2rem;
+    gap: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+
+    align-items: center;
+    flex-shrink: calc(10.5rem);
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(15, 14, 14);
+    background-color: rgb(26, 7, 56);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 10ms 10ms linear;
+}
+
+.navpanel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.panel.active {
+    width: 50%;
+}
+
+.favicons {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5px solid rgb(253, 245, 245);
+    background-color: azure;
+    padding: 0.35rem;
+    border-radius: 20px;
+}
+
+.panel:hover {
+    width: 7.6rem;
+}
+
+.daynight {
+    height: 5%;
+    width: 20%;
+    margin-left: 74%;
+    margin-top: 1%;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.theme {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: none;
+    flex-shrink: calc(1.5);
+
+}
+
+.contentbox {
+    position: absolute;
+    width: 65%;
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 25%;
+    animation-name: display;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.hindi {
+    color: azure;
+    font-family: "Jaini Purva", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 1.3rem;
+    font-size: 4rem;
+    margin-top: 3rem;
+
+}
+
+.english {
+    color: rgb(202, 180, 255);
+    font-style: normal;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-top: 0rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.french {
+    color: rgb(217, 166, 220);
+    font-style: normal;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-top: 0rem;
+    font-family: "Sevillana", cursive;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.name {
+    height: 20%;
+    margin-top: 4.5rem;
+}
+
+.firstname {
+    height: 50%;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+.lastname {
+    height: 50%;
+    color: rgb(136, 7, 235);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+@keyframes display {
+    0% {
+        opacity: 0;
+    }
+
+    ;
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    ;
+
+    80% {
+        transform: scale(1);
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+.panelitem:hover {
+    transform: scale(1.2);
+}
+
+.pdetails {
+    margin-top: 4rem;
+    min-height: 10%;
+    width:110%;
+    font-size: 2.5rem;
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+.type-text{
+    color:rgb(255, 17, 0);
+    font-size: 4rem;
+    padding-top: 0.6rem;
+    font-family: "Caudex", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.arrow{
+    animation-name: scaling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes scaling {
+    10% {transform: scale(1.2);} 
+    90%{transform: scale(1);}
+    
+}
+.arrow:hover{
+    animation-play-state: paused;
+}
+.panel:hover  .arrow{
+    animation-name: scaling;
+    animation-iteration-count: 0;
+}
